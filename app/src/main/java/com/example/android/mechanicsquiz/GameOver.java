@@ -23,7 +23,7 @@ public class GameOver extends Activity {
             Toast.makeText(this, getString(R.string.you_scored) + score * 10 + getString(R.string.points), Toast.LENGTH_LONG).show();
         } else {
 
-            Toast.makeText(this, "Try again!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.you_scored) + score * 10 + getString(R.string.points), Toast.LENGTH_LONG).show();
             message.setText(getString(R.string.try_again));
 
         }
