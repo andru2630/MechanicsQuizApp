@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scroll_view_style"
+    tools:context="com.example.android.mechanicsquiz.MultipleChoice">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/linear_layouts_style"
+
+    tools:context="com.example.android.mechanicsquiz.MultipleChoice">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/multiple_question"
+            style="@style/typical_text_style"
+            android:text="@string/multiple_choice_question_1" />
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/multiple_answer1"
+        style="@style/answer_style"
+        android:text="@string/multiple_choice_question1_answer1" />
+
+    <CheckBox
+        android:id="@+id/multiple_answer2"
+        style="@style/answer_style"
+        android:text="@string/multiple_choice_question1_answer2" />
+
+    <CheckBox
+        android:id="@+id/multiple_answer3"
+        style="@style/answer_style"
+        android:text="@string/multiple_choice_question1_answer3" />
+
+    <CheckBox
+        android:id="@+id/multiple_answer4"
+        style="@style/answer_style"
+        android:text="@string/multiple_choice_question1_answer4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/button_next_question"
+            style="@style/normal_buttons_style"
+            android:text="@string/button_next_question"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </ScrollView>

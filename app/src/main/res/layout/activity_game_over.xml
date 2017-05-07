@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scroll_view_style"
+    tools:context="com.example.android.mechanicsquiz.GameOver" >
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        style="@style/linear_layouts_style"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/congratulations"
+            style="@style/typical_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/congratulations" />
+
+        <TextView
+            android:id="@+id/final_score"
+            style="@style/typical_text_style"
+            android:text="@string/final_score" />
+
+
+        <Button
+            android:id="@+id/go_to_main_screen"
+            style="@style/normal_buttons_style"
+            android:text="@string/button_back_menu" />
+
+    </LinearLayout>
+</ScrollView>

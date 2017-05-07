@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scroll_view_style"
+    tools:context="com.example.android.mechanicsquiz.SingleChoice">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        style="@style/linear_layouts_style"
+        tools:context="com.example.android.mechanicsquiz.SingleChoice">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_with_single_answer"
+                style="@style/typical_text_style"
+                android:text="@string/single_choice_question" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/SingleAnswerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/piston_head" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer_1"
+                style="@style/answer_style"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/single_choice_question1_answer1" />
+
+            <RadioButton
+                android:id="@+id/answer_2"
+                style="@style/answer_style"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/single_choice_question1_answer2" />
+
+            <RadioButton
+                android:id="@+id/answer_3"
+                style="@style/answer_style"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/single_choice_question1_answer3" />
+
+            <RadioButton
+                android:id="@+id/answer_4"
+                style="@style/answer_style"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/single_choice_question1_answer4" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_next_question"
+                style="@style/normal_buttons_style"
+                android:text="@string/button_next_question" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

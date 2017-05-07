@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scroll_view_style"
+    tools:context="com.example.android.mechanicsquiz.MainMenu">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        style="@style/linear_layouts_style"
+        tools:context="com.example.android.mechanicsquiz.MainMenu">
+
+        <TextView
+            android:id="@+id/welcome"
+            style="@style/welcome_text_style"
+            android:text="@string/hello" />
+
+        <TextView
+            android:id="@+id/welcome_to_car_parts_quiz"
+            style="@style/welcome_text_style"
+            android:text="@string/welcome" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_main_menu"
+            android:scaleType="centerCrop"
+            android:src="@drawable/car_parts_logo" />
+
+        <TextView
+            style="@style/welcome_text_style"
+            android:text="@string/choose" />
+
+        <Button
+            android:id="@+id/multiple_choice_button"
+            style="@style/menu_buttons_style"
+            android:text="@string/button_multiple_choice" />
+
+        <Button
+            android:id="@+id/single_choice_button"
+            style="@style/menu_buttons_style"
+            android:text="@string/button_one_option" />
+
+        <Button
+            android:id="@+id/write_your_answer_button"
+            style="@style/menu_buttons_style"
+            android:text="@string/button_written_answer" />
+
+
+    </LinearLayout>
+</ScrollView>
