@@ -17,10 +17,7 @@
             android:layout_height="wrap_content"
             android:text="@string/congratulations" />
 
-        <TextView
-            android:id="@+id/final_score"
-            style="@style/typical_text_style"
-            android:text="@string/final_score" />
+
 
 
         <Button

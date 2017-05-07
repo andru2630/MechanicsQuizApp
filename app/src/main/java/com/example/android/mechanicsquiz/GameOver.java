@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class GameOver extends Activity {
@@ -17,13 +18,12 @@ public class GameOver extends Activity {
 
         Intent intent = getIntent();
         int score = intent.getExtras().getInt("score");
-        TextView finalScore = (TextView) findViewById(R.id.final_score);
 
         if (score > 0) {
-            finalScore.setText(getString(R.string.you_scored) + score * 10 + getString(R.string.points));
-        } else if (score == 0){
+            Toast.makeText(this, getString(R.string.you_scored) + score * 10 + getString(R.string.points), Toast.LENGTH_LONG).show();
+        } else {
 
-            finalScore.setText(getString(R.string.you_scored) + score * 10 + getString(R.string.points));
+            Toast.makeText(this, "Try again!", Toast.LENGTH_LONG).show();
             message.setText(getString(R.string.try_again));
 
         }
